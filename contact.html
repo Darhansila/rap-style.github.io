@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="images/logo.png" rel="icon" type="image/x-icon">
+    <title>Cвязь</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #FFFFFF;
+            font-family: 'Russo One', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        a {
+            color: #FF0000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a.active {
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        #container {
+            width: 90%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #nav {
+            background-color: #333333;
+            padding: 15px;
+            border-bottom: 3px solid #FF0000;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        nav {
+            display: inline-block;
+        }
+
+        nav a {
+            margin: 0 10px;
+        }
+
+        #content {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #FF0000;
+            font-size: 28px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            background-color: #262626;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 0 auto;
+            border: 2px solid #FF0000;
+        }
+
+        .contact-form label {
+            color: #FF0000;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #333333;
+            color: #FFFFFF;
+            border: 2px solid #FF0000;
+            border-radius: 5px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #cc0000;
+        }
+
+        #footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #333333;
+            color: #FFFFFF;
+            border-top: 3px solid #FF0000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="nav">
+            <div id="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <a href="index1.html">Главная</a> | 
+                <a href="bio.html">Биография</a> | 
+                <a href="music.html">Музыки</a> | 
+                <a href="gallery.html">Галерея</a> | 
+                <a href="contact.html" class="active">Связь</a>
+            </nav>
+        </header>
+
+        <div id="content">
+            <h2>Связь с нами</h2>
+            <div class="contact-info">
+                <p>Если у вас есть какие-либо вопросы или комментарии, не стесняйтесь обращаться к нам!</p>
+                <p><strong>Емайл:</strong> darkhan@email.com</p>
+                <p><strong>Номер:</strong> +7 7006632135</p>
+                <p><strong>Адрес:</strong> ул.Абая 137A</p>
+            </div>
+
+            <div class="contact-form">
+                <h3></h3>
+                <form action="#" method="POST">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Eмайл</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>&copy; 2024 Рэпер сайт.Все условия соблюдены.</p>
+        </footer>
+    </div>
+</body>
+</html>

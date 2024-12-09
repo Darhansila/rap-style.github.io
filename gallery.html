@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="images/logo.png" rel="icon" type="image/x-icon">
+    <title>Галерея</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #FFFFFF;
+            font-family: 'Russo One', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav {
+            background-color: #333333;
+            padding: 20px;
+            border-bottom: 3px solid #FF0000;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #logo {
+            margin-bottom: 10px;
+        }
+
+        #logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        nav {
+            display: inline-block;
+        }
+
+        nav a {
+            color: #FF0000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a.active {
+            color: #FFFFFF;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #FF0000;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #262626;
+            border: 2px solid #FF0000;
+            border-radius: 15px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item h3 {
+            color: #FF0000;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        #footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333333;
+            color: #FFFFFF;
+            border-top: 3px solid #FF0000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="nav">
+            <div id="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <a href="index1.html">Главная</a>
+                <a href="bio.html">Биография</a>
+                <a href="music.html">Музыки</a>
+                <a href="gallery.html" class="active">Галерея</a>
+                <a href="contact.html">Связь</a>
+            </nav>
+        </header>
+        <div id="content">
+            <h2>Галерея</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/e1.jpg" alt="Картинка 1">
+                    <h3>Рекордный концерт Эминема</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/e2.jpg" alt="Картинка 2">
+                    <h3>Эминем в студенческие годы</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/e3.jpg" alt="Картинка 3">
+                    <h3>Первый грандиозный концерт</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/e4.jpg" alt="Картинка 4">
+                    <h3>Первая встреча с фан базой</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/e5.jpg" alt="Картинка 5">
+                    <h3>Эминем на своей первой работе</h3>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>&copy; 2024 Рэпер сайт. Все условия соблюдены.</p>
+        </footer>
+    </div>
+</body>
+</html>

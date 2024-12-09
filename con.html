@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/logo.png" rel="icon" type="image/x-icon">
+    <title>Регистрация сәтті өтті</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-container {
+            text-align: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .message-container h1 {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .message-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .message-container a {
+            color: #FF0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .message-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>Регистрация прошла успешно!</h1>
+        <p>Переходим на страницу логина.</p>
+        <p>Если не работает автопереход <a href="index.html">Жмите сюда</a>.</p>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 5000);
+    </script>
+</body>
+</html>

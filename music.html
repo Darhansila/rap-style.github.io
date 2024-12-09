@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эминем - Альбомдар</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="images/logo.png" rel="icon" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Russo One', 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1, footer p {
+            color: #FF0000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #333333;
+            border-bottom: 3px solid #FF0000;
+        }
+        nav a {
+            color: #FF0000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+        nav a.active {
+            color: #FFFFFF;
+        }
+        #logo img {
+            height: 50px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #FF0000;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .album {
+            margin-bottom: 40px;
+        }
+        .swiper {
+            width: 100%;
+            height: 400px;
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .swiper-slide img {
+            width: 80%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .swiper-slide h4 {
+            margin: 10px 0;
+        }
+        .swiper-slide-active {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .swiper-slide-next, .swiper-slide-prev {
+            transform: scale(0.6);
+            opacity: 0.5;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            color: #fff;
+        }
+        .volume-control {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%) rotate(-90deg);
+            background-color: transparent;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .volume-control input[type="range"] {
+            -webkit-appearance: none;
+            width: 150px;
+            background: #555;
+            height: 5px;
+            border-radius: 5px;
+            outline: none;
+        }
+        .volume-control input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #FF0000;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .swiper-slide img {
+    width: 300px; /* Барлық суреттердің бірдей ені */
+    height: 300px; /* Барлық суреттердің бірдей биіктігі */
+    object-fit: cover; /* Суреттің пропорцияларын сақтау */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div>
+            <a href="index1.html">Главная</a> | 
+            <a href="bio.html">Биография</a> | 
+            <a href="music.html" class="active">Музыки</a> | 
+            <a href="gallery.html">Галерея</a> | 
+            <a href="contact.html">Связь</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Эминем - Альбомдар</h1>
+    </header>
+
+    <!-- Recovery -->
+    <div class="container album">
+        <h2>Recovery (2010)</h2>
+        <p><strong>Recovery</strong> - Эминемнің мотивациялық альбомы. 17 әннен тұрады. Бұл альбом Эминемнің есірткіге тәуелділіктен кейінгі қайта оралуын бейнелейді. Оның ең танымал әндері "Not Afraid" және "Love The Way You Lie".</p>
+        <div class="swiper swiper-recovery">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/notaf.png" alt="Not Afraid">
+                    <h4>Not Afraid</h4>
+                    <audio src="audio/notafraid.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/lovethe.png" alt="Love The Way You Lie">
+                    <h4>Love The Way You Lie</h4>
+                    <audio src="audio/lovetheway.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/unevero.png" alt="Godzilla">
+                    <h4>Your Never Over</h4>
+                    <audio src="audio/unever.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/almost.png" alt="Godzilla">
+                    <h4>Almost Famous</h4>
+                    <audio src="audio/almost.mp3"></audio>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="volume-control">
+        <label for="volume-range"></label>
+        <input id="volume-range" type="range" min="0" max="1" step="0.1" value="1">
+    </div>
+
+    <div class="container album">
+        <h2>Music to Be Murdered By (2020)</h2>
+        <p><strong>Music to Be Murdered By</strong> - Эминемнің ерекше лирикалық шеберлігін көрсеткен альбом. 20 әннен тұрады. Альбомның басты әндері "Godzilla" мен "Darkness", екеуі де тыңдарманға үлкен әсер қалдырды.</p>
+        <div class="swiper swiper-mtbmb">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/godzilla.png" alt="Godzilla">
+                    <h4>Godzilla</h4>
+                    <audio src="audio/godzilla.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/darkness.png" alt="Darkness">
+                    <h4>Darkness</h4>
+                    <audio src="audio/darkness.mp3"></audio>
+                
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/sheloves.png" alt="Godzilla">
+                    <h4>she loves me</h4>
+                    <audio src="audio/shelovesme.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/killer.png" alt="Godzilla">
+                    <h4>Killer</h4>
+                    <audio src="audio/killer.mp3"></audio>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!-- Curtain Call -->
+    <div class="container album">
+        <h2>Curtain Call: The Hits (2005)</h2>
+        <p><strong>Curtain Call: The Hits</strong> - Эминемнің ең танымал хиттарының жинағы. 12 әннен тұрады. Альбомға "Lose Yourself", "Stan" және басқа да танымал тректер кіреді.</p>
+        <div class="swiper swiper-cc">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/loseusel.png" alt="Lose Yourself">
+                    <h4>Lose Yourself</h4>
+                    <audio src="audio/loseuself.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/mock.png" alt="Stan">
+                    <h4>Stan</h4>
+                    <audio src="audio/stan.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/witautme.png" alt="Godzilla">
+                    <h4>Without Me</h4>
+                    <audio src="audio/witautme.mp3"></audio>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/sheloves.png" alt="Godzilla">
+                    <h4>The real slim shady</h4>
+                    <audio src="audio/realslim.mp3"></audio>
+                </div>
+            </div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eminem Fan Page. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const albums = ['.swiper-recovery', '.swiper-mtbmb', '.swiper-cc'];
+albums.forEach(albumClass => {
+    const swiper = new Swiper(albumClass, {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+            nextEl: `${albumClass} .swiper-button-next`,
+            prevEl: `${albumClass} .swiper-button-prev`,
+        },
+        on: {
+            slideChangeTransitionEnd: function () {
+                const allAudioElements = document.querySelectorAll('audio');
+                allAudioElements.forEach(audio => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                });
+
+                const activeSlide = document.querySelector(`${albumClass} .swiper-slide-active`);
+                if (activeSlide) {
+                    const audio = activeSlide.querySelector('audio');
+                    if (audio) audio.play();
+                }
+            }
+        }
+    });
+});
+
+const volumeRange = document.getElementById('volume-range');
+
+const audioElements = document.querySelectorAll('audio');
+
+const updateVolume = () => {
+    const volume = volumeRange.value;
+    audioElements.forEach(audio => {
+        audio.volume = volume;
+    });
+};
+
+volumeRange.addEventListener('input', updateVolume);
+
+    </script>
+</body>
+</html>
