@@ -17,7 +17,6 @@
             font-family: Arial, sans-serif;
         }
 
-        
         body {
             background: url('images/fonn.png') no-repeat center center/cover;
             display: flex;
@@ -25,7 +24,6 @@
             align-items: center;
         }
 
-      
         .container {
             background: rgba(0, 0, 0, 0.7); 
             padding: 30px 50px;
@@ -35,7 +33,6 @@
             text-align: center;
         }
 
-        
         .container h2 {
             margin-bottom: 20px;
             color: #FF0000; 
@@ -82,14 +79,18 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        function redirectToHomePage() {
+            window.location.href = "index1.html"; // Replace with your homepage URL
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h2>Логин</h2>
-        <form action="index.html" method="POST">
+        <form onsubmit="event.preventDefault(); redirectToHomePage();">
             <input type="text" name="username" placeholder="Логин" required>
             <input type="password" name="password" placeholder="Пароль" required>
-            
             <button type="submit">Логин</button>
         </form>
     </div>
