@@ -79,11 +79,16 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        function redirectToOtherPage() {
+            window.location.href = "con.html";
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h2>Регистрация</h2>
-        <form action="con.html" method="POST">
+        <form onsubmit="event.preventDefault(); redirectToOtherPage();">
             <input type="text" name="username" placeholder="Логин" required>
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Пароль" required>
